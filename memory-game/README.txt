@@ -1,2 +1,2 @@
 # Memory game 
-# using: scss, webpack, postcss, vanila JS
+# using: scss, webpack, vanila JS
