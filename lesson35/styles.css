@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.todo-list {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #3498db;
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 600px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  margin: auto;
+  width: 100%;
+}
+
+.list__item {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 50px 50px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #2980b9;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.list__item:hover {
+  transform: scale(1.005);
+  transition: 0.2s;
+}
+
+.list__item_done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.list__item:last-child {
+  margin-bottom: 0;
+}
+
+.list__item-checkbox {
+  margin-right: 8px;
+  justify-self: end;
+}
+
+.btn {
+  height: 32px;
+  min-width: 64px;
+  border: 3px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+.actions {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.task-input {
+  height: 32px;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.list__item-delete {
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-right: 8px;
+  justify-self: end;
+
+}
+
+.list__item-delete:active {
+  transform: rotate(180deg) scale(1.2);
+  transition: 0.3s;
+}
